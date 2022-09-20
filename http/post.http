@@ -1,0 +1,3 @@
+PATCH http://localhost:5000/posts/63271af2c9e1ae874eede100/like HTTP/1.0
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTU4ZWI4ZThlOTU3OTFkZGU1ZDY3YiIsImVtYWlsIjoiY291cGRldGF0b2Zwc3ljaG9zQGdtYWlsLmNvbSIsImlhdCI6MTY2MzUxNjk5MCwiZXhwIjoxNjY0MTIxNzkwfQ.Ed87HODULOVE_SppdFOSk32m88i4CC76pLYqSNuWEgk
