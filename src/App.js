@@ -11,13 +11,13 @@ import { useEffect } from "react";
 import Posts from "./pages/Home/Posts";
 import User from "./pages/Home/User";
 
-// const start = () => {
-//   gapi.auth2.init({
-//     clientId: CLIENT_ID,
-//   });
-// };
+const start = () => {
+  gapi.auth2.init({
+    clientId: CLIENT_ID,
+  });
+};
 
-// gapi.load("auth2", start);
+gapi.load("auth2", start);
 
 function App() {
   const navigate = useNavigate();
