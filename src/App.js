@@ -12,13 +12,12 @@ import Posts from "./pages/Home/Posts";
 import User from "./pages/Home/User";
 
 const start = () => {
-  gapi.client.init({
+  gapi.auth2.init({
     clientId: CLIENT_ID,
-    scope: "",
   });
 };
 
-gapi.load("client:auth2", start);
+gapi.load("auth2", start);
 
 function App() {
   const navigate = useNavigate();
@@ -29,6 +28,7 @@ function App() {
     if (user) return;
     navigate("/auth");
   }, [user, navigate]);
+
   return (
     <Container maxWidth={false} disableGutters={true} className="App">
       <Routes>
