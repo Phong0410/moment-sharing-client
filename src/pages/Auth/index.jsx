@@ -76,7 +76,6 @@ const Auth = () => {
   };
 
   const googleSuccess = async (res) => {
-    console.log(CLIENT_ID);
     const result = await res?.profileObj;
     const token = await res?.tokenId;
 
@@ -93,6 +92,7 @@ const Auth = () => {
     }
   };
   const googleFailure = (error) => {
+    console.log(CLIENT_ID);
     console.log(error);
   };
 
