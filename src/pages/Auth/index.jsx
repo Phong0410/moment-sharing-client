@@ -92,7 +92,6 @@ const Auth = () => {
     }
   };
   const googleFailure = (error) => {
-    console.log(CLIENT_ID);
     console.log(error);
   };
 
