@@ -13,8 +13,6 @@ import { GoogleLogin } from "react-google-login";
 import { useDispatch, useSelector } from "react-redux";
 import { login, register, googleLogin } from "../../app/authSlice";
 
-import { CLIENT_ID } from "../../utils/apis/gapi";
-
 import AuthInput from "../../components/AuthInput";
 import Icon from "./Icon";
 
@@ -160,7 +158,6 @@ const Auth = () => {
             {isRegister ? "Register" : "Login"}
           </Button>
           <GoogleLogin
-            clientId={CLIENT_ID}
             render={(renderProps) => (
               <Button
                 className={classes.googleButton}
