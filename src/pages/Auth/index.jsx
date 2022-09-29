@@ -76,6 +76,7 @@ const Auth = () => {
   };
 
   const googleSuccess = async (res) => {
+    console.log(CLIENT_ID);
     const result = await res?.profileObj;
     const token = await res?.tokenId;
 
